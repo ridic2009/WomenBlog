@@ -6,10 +6,10 @@ from .views import PostViewSet
 
 router = SimpleRouter()
 
-router.register(r'post', PostViewSet)
+router.register(r'posts', PostViewSet)
 
 urlpatterns = [
-    
+
 ]
 
 urlpatterns += router.urls

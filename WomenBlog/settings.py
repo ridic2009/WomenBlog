@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sk0911.pythonanywhere.com']
+ALLOWED_HOSTS = ['sk0911.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -144,5 +144,6 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_PARSER_CLASSES': (
         'rest_framework.parsers.JSONParser',
-    )
+    ),
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }

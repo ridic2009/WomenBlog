@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 .wrapper {
-  @apply w-[1200px] mx-auto px-4;
+  @apply min-w-80 max-w-full w-[75rem] mx-auto px-4;
 }
 
 .nav-link {
   @apply block p-2 hover:underline;
+}
+
+.primary-btn {
+  @apply bg-green-600/40 text-gray-800 py-2 px-4 rounded-md font-semibold
+}
+
+.input-wrapper {
+  @apply flex flex-col mb-6
 }

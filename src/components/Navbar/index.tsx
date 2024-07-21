@@ -11,7 +11,7 @@ const links = [
 export default function Navbar() {
   return (
     <nav className="bg-[#F5F5F5]">
-      <div className="w-full h-2 bg-gradient-to-r from-[#ECAAC6] to-[#5DD5EF]" />
+      <div className="w-full h-2 bg-green-600/40" />
       <menu className="flex gap-8 justify-center wrapper">
         {links.map((link) => (
           <li>

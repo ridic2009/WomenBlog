@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function SignIn() {
   return (
-    <section className="h-full flex justify-center flex-col items-center">
-      <h1 className="font-bold text-3xl mb-8">Welcome!</h1>
-      <form className="w-full xl:w-1/2" method="post">
+    <section className="section h-full flex justify-center flex-col items-center">
+      <h1 className="font-bold mb-2 text-xl">Welcome!</h1>
+      <form className="w-full md:w-1/2" method="post">
         <fieldset>
           <legend className="sr-only">Signing in application</legend>
           <div className="input-wrapper">
@@ -12,7 +12,7 @@ export default function SignIn() {
               Email<span className="text-red-800">*</span>
             </label>
             <input
-              className="p-4 border rounded-md"
+              className="input"
               type="text"
               placeholder="for example, user@gmail.com"
               name="email"
@@ -24,7 +24,7 @@ export default function SignIn() {
               Password<span className="text-red-800">*</span>
             </label>
             <input
-              className="p-4 border rounded-md"
+              className="input"
               type="text"
               placeholder="for example, e#F5v6@$fF5b^JgG4"
               name="password"
@@ -35,14 +35,14 @@ export default function SignIn() {
         <button className="primary-btn w-full" type="submit">
           Log in
         </button>
-        <div className="flex justify-center items-center my-8">
-          <span className="w-full block bg-black/40 h-[1px]" />
-          <span className="w-full text-black/80 font-semibold text-center">
+        <div className="flex justify-center items-center my-6">
+          <span className="w-full block bg-secondary h-[1px]" />
+          <span className="w-full text-secondary font-semibold text-center text-xs px-2">
             Or login with
           </span>
-          <span className="w-full block bg-black/40 h-[1px]" />
+          <span className="w-full block bg-secondary h-[1px]" />
         </div>
-        <div className="flex items-center font-semibold text-xl border px-4 py-2 rounded-lg justify-center">
+        <div className="oauth-btn">
           <svg
             aria-label="Sign in with Google"
             xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ export default function SignIn() {
           </svg>
           <span className="w-40 text-center">Google</span>
         </div>
-        <div className="flex items-center font-semibold text-xl border px-4 py-2 rounded-lg justify-center mt-4">
+        <div className="oauth-btn mt-2">
           <svg
             aria-label="Sign in with Facebook"
             xmlns="http://www.w3.org/2000/svg"

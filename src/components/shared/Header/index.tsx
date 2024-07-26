@@ -7,16 +7,17 @@ export default function Header() {
 
   return (
     <header>
-      <div className="flex justify-between items-center my-7 wrapper">
+      <div className="flex justify-between items-center py-6 wrapper">
         <search>
           <svg
+            width={32}
+            height={32}
             aria-label="search"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="h-8 w-8"
           >
             <path
               strokeLinecap="round"
@@ -26,7 +27,7 @@ export default function Header() {
           </svg>
         </search>
         <div>
-          <p className="font-semibold text-5xl">Woman blog</p>
+          <p className="font-semibold text-3xl">Woman blog</p>
           <span className="text-slate-600">blog for woman</span>
         </div>
         {isAdmin ? (
@@ -35,13 +36,14 @@ export default function Header() {
           <Link href={"/signin"}>
             {" "}
             <svg
+              width={32}
+              height={32}
               aria-label="Sign in application"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="h-8 w-8"
             >
               <path
                 strokeLinecap="round"

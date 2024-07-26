@@ -1,6 +1,6 @@
-export { default as Navbar } from "./Navbar";
-export { default as PostList } from "./PostList";
-export { default as PostItem } from "./PostItem";
-export { default as Header } from "./Header";
-export { default as Footer } from "./Footer";
-export { default as ProfileBadge } from "./ProfileBadge";
+export { default as Navbar } from "./shared/Navbar";
+export { default as PostList } from "./shared/PostList";
+export { default as PostItem } from "./shared/PostItem";
+export { default as Header } from "./shared/Header";
+export { default as Footer } from "./shared/Footer";
+export { default as ProfileBadge } from "./shared/ProfileBadge";

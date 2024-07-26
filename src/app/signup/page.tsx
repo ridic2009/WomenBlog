@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function SignUp() {
   return (
-    <section className="h-full flex justify-center flex-col items-center">
+    <section className="section h-full flex justify-center flex-col items-center">
       <h1 className="font-bold text-2xl mb-8 xl:text-3xl">
         Register a new account
       </h1>
-      <form className="w-full xl:w-1/2" method="post">
+      <form className="w-full md:w-1/2" method="post">
         <fieldset>
           <legend className="sr-only">Register new user</legend>
           <div className="input-wrapper">
@@ -14,7 +14,7 @@ export default function SignUp() {
               Username<span className="text-red-800">*</span>
             </label>
             <input
-              className="p-4 border rounded-md"
+              className="input"
               type="text"
               placeholder="for example, user_name123"
               name="username"
@@ -27,7 +27,7 @@ export default function SignUp() {
               Email<span className="text-red-800">*</span>
             </label>
             <input
-              className="p-4 border rounded-md"
+              className="input"
               type="text"
               placeholder="for example, user@gmail.com"
               name="email"
@@ -40,7 +40,7 @@ export default function SignUp() {
               Password<span className="text-red-800">*</span>
             </label>
             <input
-              className="p-4 border rounded-md"
+              className="input"
               type="text"
               placeholder="for example, e#F5v6@$fF5b^JgG4"
               name="password"

@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply h-screen
+}
+
+body {
+  @apply flex flex-col
+}
+
+main {
+  @apply flex-1
+}
+
+.wrapper {
+  @apply min-w-80 max-w-full w-[75rem] mx-auto px-4;
+}
+
+.section {
+  @apply py-2
+}
+
+.primary-btn {
+  @apply bg-primary text-secondary py-2 px-4 rounded-md font-semibold;
+}
+
+.oauth-btn {
+  @apply flex items-center font-semibold text-lg border py-1 rounded-lg justify-center cursor-pointer;
+}
+
+.input-wrapper {
+  @apply flex flex-col mb-6;
+}
+
+.input {
+  @apply p-3 border rounded-md
+}
+
+

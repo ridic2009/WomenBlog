@@ -4,7 +4,7 @@ import { Montserrat } from "next/font/google";
 
 import { Footer, Header } from "@/components";
 
-import "./globals.css";
+import "./style.css";
 
 const font = Montserrat({ style: "normal", subsets: ["cyrillic"] });
 
@@ -20,16 +20,19 @@ export const viewport: Viewport = {
   userScalable: false,
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html className="h-full" lang="en">
-      <body className={font.className + " " + "h-full flex flex-col"}>
+    <html lang="en">
+      <body className={font.className}>
         <Header />
-        <main className="flex-1 wrapper my-8">{children}</main>
+        <main className="wrapper">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

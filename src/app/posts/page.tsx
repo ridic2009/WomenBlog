@@ -46,7 +46,7 @@ export default async function PostsPage() {
   ];
 
   return (
-    <section className="wrapper mt-8">
+    <section className="mt-8">
       <PostList posts={posts} />
     </section>
   );

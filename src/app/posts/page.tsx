@@ -1,5 +1,4 @@
-import { PostList } from "@/components";
-import { title } from "process";
+import { PostList } from "@/components/shared";
 
 export default async function PostsPage() {
   const posts = [

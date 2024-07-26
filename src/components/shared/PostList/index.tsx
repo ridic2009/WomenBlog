@@ -1,9 +1,7 @@
 import Link from "next/link";
-import PostItem from "../PostItem";
+import { PostItem } from "@/components/shared";
 
 export default function PostList({ posts }: { posts: any[] }) {
-  console.log(posts);
-  
   return (
     <ul className="flex flex-wrap gap-8">
       {posts.map((post) => (

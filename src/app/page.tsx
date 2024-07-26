@@ -1,3 +1,3 @@
 export default function Home() {
-  return <section className="mt-12">Homepage</section>;
+  return <section className="section">Homepage</section>;
 }

@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Navbar from "../Navbar";
-import ProfileBadge from "../ProfileBadge";
+import { Container, ProfileBadge } from "@/components/shared";
 
 export default function Header() {
   let isAdmin = false;
 
   return (
     <header>
-      <div className="flex justify-between items-center py-6 wrapper">
+      <Container className="flex justify-between items-center py-8">
         <search>
           <svg
             width={32}
@@ -53,7 +53,7 @@ export default function Header() {
             </svg>
           </Link>
         )}
-      </div>
+      </Container>
       <Navbar />
     </header>
   );

@@ -1,7 +1,9 @@
+import { Container } from "@/components/shared";
+
 export default function Footer() {
   return (
     <footer className="bg-stone-400/5 py-4">
-      <div className="wrapper">
+      <Container>
         {/* Newsletter */}
         <form className="flex flex-col sm:items-center sm:flex-row sm:gap-6">
           <label htmlFor="newslettersub">Newsletter subscription</label>
@@ -88,7 +90,7 @@ export default function Footer() {
         <small className="flex justify-end">
           Powered by <span className="text-green-600 ml-2">danilka</span>
         </small>
-      </div>
+      </Container>
     </footer>
   );
 }

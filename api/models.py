@@ -11,6 +11,7 @@ class Post(models.Model):
     slug = models.SlugField(blank=True, null=True)
     text = models.TextField(blank=True)
     
+
     def __str__(self):
         return self.title
     
